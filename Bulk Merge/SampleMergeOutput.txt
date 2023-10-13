@@ -1,0 +1,58 @@
+09-14-2020_16:24:51	0	0
+
+Winning and losing lead information:
+{'id': [3204204, 3204205], 'sfdcLeadId': [None, '00Q3a00000rJFEVEA4'], 'email': ['sample1@sample1.edu', 'sample1@sample1.edu'], 'createdAt': ['2020-09-08T10:02:55Z', '2020-09-08T10:02:56Z'], 'firstName': ['Luc', 'Luc'], 'lastName': ['Bak', 'Bak'], 'company': ['Me', 'Me'], 'title': [None, None], 'website': [None, 'sample1.edu'], 'country': [None, 'United States'], 'mcUserId__c': ['8a781cea-8b2a-4d19-ac0f-6d22e3c2770a', '8a781cea-8b2a-4d19-ac0f-6d22e3c2770a'], 'Querystring__c': [None, None], 'leadSource': [None, None], 'Lead_Source_Detail__c': [None, None], 'utm_source__c': [None, None], 'utm_medium__c': [None, None], 'utm_campaign__c': [None, None], 'leadScore': [1.0, None], 'leadStatus': ['MQL', 'SDR Engaged'], 'Lead_Status__c': [None, None], 'Lifecycle_Stage_Person__c': [None, None], 'unsubscribed': [True, True], 'MC_Account_Blocked__c': [False, False]}
+
+Winning ID with field and value combinations to be updated after merging:
+{'id': 3204205, 'sfdcLeadId': '00Q3a00000rJFEVEA4', 'email': 'sample1@sample1.edu', 'createdAt': '2020-09-08T10:02:55Z', 'firstName': 'Luc', 'lastName': 'Bake', 'company': 'Me', 'title': None, 'website': 'sample1.edu', 'country': 'United States', 'mcUserId__c': '8a781cea-8b2a-4d19-ac0f-6d22e3c2770a', 'Querystring__c': None, 'leadSource': None, 'Lead_Source_Detail__c': None, 'utm_source__c': None, 'utm_medium__c': None, 'utm_campaign__c': None, 'leadScore': 1, 'leadStatus': 'SDR Engaged', 'Lead_Status__c': None, 'Lifecycle_Stage_Person__c': None, 'unsubscribed': True, 'MC_Account_Blocked__c': False}
+
+Merge Response:
+['{"requestId":"fa0#1748e8197b8","result":[],"success":true}']
+
+Update Response:
+{"requestId":"12154#1748e81b5d6","result":[{"id":3204205,"status":"updated"}],"success":true}
+
+---------------------------------------------------------------------------------------
+
+09-14-2020_16:25:00	1	2
+
+Winning and losing lead information:
+{'id': [3204494, 3204495], 'sfdcLeadId': [None, '00Q3a00000rJHAWEA4'], 'email': ['sample2@sample2.net', 'sample2@sample2.net'], 'createdAt': ['2020-09-08T12:56:04Z', '2020-09-08T12:56:04Z'], 'firstName': ['L', 'L'], 'lastName': ['Nar', 'Nar'], 'company': ['sample2', 'sample2'], 'title': [None, None], 'website': [None, 'sample2.net'], 'country': [None, 'United States'], 'mcUserId__c': ['31322774-7b5d-453e-979a-c6907b482b05', '31322774-7b5d-453e-979a-c6907b482b05'], 'Querystring__c': [None, None], 'leadSource': [None, None], 'Lead_Source_Detail__c': [None, None], 'utm_source__c': [None, None], 'utm_medium__c': [None, None], 'utm_campaign__c': [None, None], 'leadScore': [1.0, None], 'leadStatus': ['MQL', 'SDR Engaged'], 'Lead_Status__c': [None, None], 'Lifecycle_Stage_Person__c': [None, None], 'unsubscribed': [False, False], 'MC_Account_Blocked__c': [False, False]}
+
+Winning ID with field and value combinations to be updated after merging:
+{'id': 3204495, 'sfdcLeadId': '00Q3a00000rJHAWEA4', 'email': 'sample2@sample2.net', 'createdAt': '2020-09-08T12:56:04Z', 'firstName': 'L', 'lastName': 'N', 'company': 'sample2', 'title': None, 'website': 'sample2.net', 'country': 'United States', 'mcUserId__c': '31322774-7b5d-453e-979a-c6907b482b05', 'Querystring__c': None, 'leadSource': None, 'Lead_Source_Detail__c': None, 'utm_source__c': None, 'utm_medium__c': None, 'utm_campaign__c': None, 'leadScore': 1, 'leadStatus': 'SDR Engaged', 'Lead_Status__c': None, 'Lifecycle_Stage_Person__c': None, 'unsubscribed': False, 'MC_Account_Blocked__c': False}
+
+Merge Response:
+['{"requestId":"28e0#1748e81bbda","result":[],"success":true}']
+
+Update Response:
+{"requestId":"921#1748e81cd3d","result":[{"id":3204495,"status":"updated"}],"success":true}
+
+---------------------------------------------------------------------------------------
+
+09-14-2020_16:25:06	2	4
+
+Winning and losing lead information:
+{'id': [3205143, 3205144], 'sfdcLeadId': [None, '00Q3a00000rJPEiEAO'], 'email': ['sample3@sample3.edu', 'sample3@sample3.edu'], 'createdAt': ['2020-09-09T1:16:54Z', '2020-09-09T1:16:54Z'], 'firstName': ['Aud', 'Aud'], 'lastName': ['Thor', 'Thor'], 'company': ['sample3', 'sample3'], 'title': [None, None], 'website': [None, 'sample3.edu'], 'country': [None, None], 'mcUserId__c': ['5cffe6ac-badc-47e5-a601-1380780f8d16', '5cffe6ac-badc-47e5-a601-1380780f8d16'], 'Querystring__c': [None, None], 'leadSource': [None, None], 'Lead_Source_Detail__c': [None, None], 'utm_source__c': [None, None], 'utm_medium__c': [None, None], 'utm_campaign__c': [None, None], 'leadScore': [45.0, None], 'leadStatus': ['MQL', 'Disqualified'], 'Lead_Status__c': [None, None], 'Lifecycle_Stage_Person__c': [None, None], 'unsubscribed': [False, False], 'MC_Account_Blocked__c': [False, True]}
+
+Winning ID with field and value combinations to be updated after merging:
+{'id': 3205144, 'sfdcLeadId': '00Q3a00000rJPEiEAO', 'email': 'sample3@sample3.edu', 'createdAt': '2020-09-09T1:16:54Z', 'firstName': 'Aud', 'lastName': 'Thor', 'company': 'sample3', 'title': None, 'website': 'sample3.edu', 'country': None, 'mcUserId__c': '5cffe6ac-badc-47e5-a601-1380780f8d16', 'Querystring__c': None, 'leadSource': None, 'Lead_Source_Detail__c': None, 'utm_source__c': None, 'utm_medium__c': None, 'utm_campaign__c': None, 'leadScore': 45, 'leadStatus': 'Disqualified', 'Lead_Status__c': None, 'Lifecycle_Stage_Person__c': None, 'unsubscribed': False, 'MC_Account_Blocked__c': True}
+
+Merge Response:
+['{"requestId":"13245#1748e81d33e","result":[],"success":true}']
+
+Update Response:
+{"requestId":"b366#1748e81fbaf","result":[{"id":3205144,"status":"updated"}],"success":true}
+
+---------------------------------------------------------------------------------------
+
+09-14-2020_16:25:38	3 6
+
+Winning and losing lead information:
+{'id': [2142281, 3166306], 'sfdcLeadId': ['00Qf100000kXyV7EAK', '0033a00002KB2avAAD'], 'email': ['sample4@sample4.com', 'sample4@sample4.com'], 'createdAt': ['2019-03-13T2:45:34Z', '2020-08-18T12:14:22Z'], 'firstName': ['manz', 'Manz'], 'lastName': ['pael', 'Pael'], 'company': ['sample4', 'sample4'], 'title': ['Founder, CEO', 'Founder, CEO'], 'website': ['www.sample4.com', 'www.sample4.com'], 'country': ['United States', 'India'], 'mcUserId__c': [None, '25786bae-8d7a-4081-ad19-adcc4c871b8d'], 'Querystring__c': ['google.com', None], 'leadSource': ['Inbound', 'Inbound'], 'Lead_Source_Detail__c': ['Contact Sales Form', 'Contact Sales Form'], 'utm_source__c': [None, None], 'utm_medium__c': [None, None], 'utm_campaign__c': [None, None], 'leadScore': [10.0, 77.0], 'leadStatus': ['MQL', 'ReNurture'], 'Lead_Status__c': ['SAL', 'SQL'], 'Lifecycle_Stage_Person__c': ['SAL', 'SQL'], 'unsubscribed': [True, True], 'MC_Account_Blocked__c': [False, False]}
+
+Winning ID with field and value combinations to be updated after merging:
+{'id': 2142281, 'sfdcLeadId': '00Qf100000kXyV7EAK', 'email': 'sample4@sample4.com', 'createdAt': '2019-03-13T02:45:34Z', 'firstName': 'manz', 'lastName': 'pael', 'company': 'sample4', 'title': 'Founder, CEO', 'website': 'www.sample4.com', 'country': 'United States', 'mcUserId__c': None, 'Querystring__c': 'google.com', 'leadSource': 'Inbound', 'Lead_Source_Detail__c': 'Contact Sales Form', 'utm_source__c': None, 'utm_medium__c': None, 'utm_campaign__c': None, 'leadScore': 77, 'leadStatus': 'MQL', 'Lead_Status__c': 'SQL', 'Lifecycle_Stage_Person__c': 'SQL', 'unsubscribed': True, 'MC_Account_Blocked__c': False}
+
+Merge Response:
+['{"requestId":"9877#1748e824d62","success":false,"errors":[{"code":"611","message":"System error"}]}']
