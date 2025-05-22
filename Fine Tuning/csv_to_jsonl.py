@@ -3,53 +3,17 @@ import json
 import re
 import random
 
-# Updated system prompt for Telnyx classification task
-SYSTEM_PROMPT = """
-You're a digital marketing expert whose task is to take the free-text answer
-to "How did you hear about Telnyx?" and map it into two fields:
+############ Updates Needed Here #############
 
-• Hear About Source – one of:
-  Digital Advertising, Inbound, Organic, Paid Search,
-  Referral, Sales, Tradeshow, Unknown
+SYSTEM_PROMPT = """You’re a digital marketing expert whose task is to take the free-text answer to “How did you hear about Telnyx?” 
+and categorize it into one of these 8 options: Digital Advertising, Inbound, Organic, Paid Search, Referral, Sales, Tradeshow, Unknown"""
 
-• Hear About Source Detail – the specific medium or channel
-  (e.g. Facebook, Google, Comparison, Person, WOM, etc.)
-
-Rules for bucketing:
-
-- AI chats should be put into the "Organic" bucket
-
-- Telnyx doesn't run TV, radio, or newspaper ads; any mention of those
-  goes into Unknown.
-
-- If multiple channels are mentioned, pick the more niche or lower-volume
-  medium.  Example priority: DuckDuckGo > Yahoo > Bing > Google.
-
-- Favor specificity: "Google and social media" → Organic – Google.
-
-- If it looks like a generic search term (e.g. "easy text marketing"),
-  assign simply Organic.
-
-- If it looks like a competitor comparison search,
-  assign Organic – Comparison.
-
-- If an individual is named (by name or email), assign Referral – Person.
-
-- If a vague recommender is mentioned (friend, co-worker, etc.),
-  assign Referral – WOM.
-
-- Otherwise choose the best matching source and detail according to the
-  categories above.
-
-Return your answer **only** in JSON format, e.g.:
-{ "hear_source": "Organic", "hear_source_detail": "Facebook" }
-"""
-
-# Input and output file paths
 INPUT_CSV_FILE = "/Users/tyronpretorius/Downloads/ha_input_2025050701.csv"
 TRAIN_OUTPUT_FILE = "/Users/tyronpretorius/Downloads/ha_train4.jsonl"
 VALIDATE_OUTPUT_FILE = "/Users/tyronpretorius/Downloads/ha_validate4.jsonl"
 SKIPPED_LOG_FILE = "/Users/tyronpretorius/Downloads/skipped_lines4.txt"
+
+#############################################
 
 def sanitize_text(text):
     if pd.isna(text):
