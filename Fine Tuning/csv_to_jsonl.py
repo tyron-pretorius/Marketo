@@ -49,6 +49,7 @@ def csv_to_jsonl_split(input_file, train_file, validate_file, skipped_log_file, 
         for i, row in df.iterrows():
             user_text = sanitize_text(row.get("user", ""))
             assistant_text = sanitize_text(row.get("assistant", ""))
+            system_prompt = sanitize_text(system_prompt)
 
             json_obj = {
                 "messages": [
