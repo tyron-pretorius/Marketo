@@ -5,7 +5,7 @@ import random
 
 ############ Updates Needed Here #############
 
-SYSTEM_PROMPT = """You’re a digital marketing expert whose task is to take the free-text answer to “How did you hear about Telnyx?” 
+SYSTEM_PROMPT = """You’re a digital marketing expert whose task is to take the free-text answer to 'How did you hear about Telnyx?' 
 and categorize it into one of these 8 options: Digital Advertising, Inbound, Organic, Paid Search, Referral, Sales, Tradeshow, Unknown"""
 
 INPUT_CSV_FILE = "/Users/tyronpretorius/Downloads/ha_input_2025050701.csv"
