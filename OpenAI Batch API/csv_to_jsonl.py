@@ -3,14 +3,11 @@ import json
 import os
 import tiktoken
 
-####update here
-INPUT_CSV = '/Users/tyronpretorius/Downloads/E164_Remaining_input.csv'
+INPUT_CSV = '/Users/tyronpretorius/Downloads/blog_post.csv'
 OUTPUT_DIR = '/Users/tyronpretorius/Downloads/'
 
-MODEL = "gpt-4o"
+MODEL = "gpt-4o"  # Token estimator
 MAX_TOKENS_PER_BATCH = 90000
-
-##################
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -37,12 +34,12 @@ def create_json_entry(row):
         },
         {
             "role": "user",
-            "content": f"Phone: {row['Phone']}|Country: {row['Country']}"
+            "content": f"Phone: {row['Phone Number']}|Country: {row['Country']}"
         }
     ]
 
     return {
-        "custom_id": row["Id"],
+        "custom_id": row["Id"]+"|"+row["Email Address"],
         "method": "POST",
         "url": "/v1/chat/completions",
         "body": {
