@@ -1,0 +1,1 @@
+This code can be used within Python to merge leads in bulk using the Marketo REST API. For a thorough explanation of the code take a look at the [Marketo Merge Leads in Bulk using the API](https://theworkflowpro.com/marketo-merge-leads/?utm_source=github&utm_medium=referral&utm_campaign=readme) post on TheWorkflowPro blog.

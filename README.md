@@ -1,0 +1,1 @@
+A public repository containing the code used in the automation projects from the [Marketo section](https://theworkflowpro.com/category/marketo/?utm_source=github&utm_medium=referral&utm_campaign=readme) of TheWorkflowPro blog
